@@ -9076,7 +9076,7 @@
 				(hide yes)
 			)
 		)
-		(property "PCBWay Link" "todo"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 107.315 118.745 0)
 			(effects
 				(font

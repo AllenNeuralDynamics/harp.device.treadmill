@@ -379,6 +379,151 @@
 				)
 			)
 		)
+		(symbol "Device:D_TVS"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bidirectional transient-voltage-suppression diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Logic_LevelTranslator:74LVCH2T45DC"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -963,6 +1108,24 @@
 			)
 		)
 	)
+	(junction
+		(at 187.96 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "011dfafa-3778-4965-b7b2-a9477cf29126")
+	)
+	(junction
+		(at 171.45 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a2a1719-3427-45c1-b67e-8bc2642b8b4c")
+	)
+	(junction
+		(at 163.83 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc2926a5-099b-4dfc-97e4-b5dace8c40d2")
+	)
 	(wire
 		(pts
 			(xy 122.555 177.165) (xy 122.555 178.435)
@@ -1005,7 +1168,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.925 97.79) (xy 161.925 99.06)
+			(xy 182.88 97.79) (xy 182.88 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1035,7 +1198,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.195 90.17) (xy 161.925 90.17)
+			(xy 182.88 90.17) (xy 187.96 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1065,7 +1228,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.195 95.25) (xy 158.115 95.25)
+			(xy 163.83 104.14) (xy 163.83 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63fb0076-281c-4b6b-b6a4-4d021e37928a")
+	)
+	(wire
+		(pts
+			(xy 193.04 95.25) (xy 163.83 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1105,6 +1278,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 80.01) (xy 187.96 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8286ffd8-a5c9-4a92-a471-655e0d929c26")
+	)
+	(wire
+		(pts
 			(xy 132.715 91.44) (xy 133.985 91.44)
 		)
 		(stroke
@@ -1112,6 +1295,16 @@
 			(type default)
 		)
 		(uuid "87d148c4-59e4-4b29-a62d-70ff4c693c23")
+	)
+	(wire
+		(pts
+			(xy 163.83 95.25) (xy 163.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8ebc76-7da3-4e96-96ef-d4517504a1f6")
 	)
 	(wire
 		(pts
@@ -1145,6 +1338,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 95.25) (xy 158.115 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af06191-2ffe-4de6-b206-292bca84d4c7")
+	)
+	(wire
+		(pts
 			(xy 132.715 101.6) (xy 132.715 102.87)
 		)
 		(stroke
@@ -1155,13 +1358,23 @@
 	)
 	(wire
 		(pts
-			(xy 163.195 97.79) (xy 161.925 97.79)
+			(xy 182.88 97.79) (xy 193.04 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a1b94b5f-83a6-4036-94fd-ae27bc468d43")
+	)
+	(wire
+		(pts
+			(xy 171.45 104.14) (xy 171.45 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a44dd7ee-c567-448e-9708-aeb4e0c941a7")
 	)
 	(wire
 		(pts
@@ -1185,7 +1398,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.925 85.09) (xy 161.925 90.17)
+			(xy 182.88 85.09) (xy 182.88 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1195,13 +1408,33 @@
 	)
 	(wire
 		(pts
-			(xy 159.385 92.71) (xy 163.195 92.71)
+			(xy 187.96 88.9) (xy 187.96 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f6e75d-6561-41ef-9021-6dfeac0000a0")
+	)
+	(wire
+		(pts
+			(xy 159.385 92.71) (xy 171.45 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c7bb9ad6-9c19-48ce-9594-7d0fe2c4335e")
+	)
+	(wire
+		(pts
+			(xy 171.45 92.71) (xy 193.04 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7d5069a-71cc-471f-8f82-8d6b8e88e7b4")
 	)
 	(wire
 		(pts
@@ -1233,6 +1466,26 @@
 		)
 		(uuid "d4a025d1-167c-4972-ab20-bb9ba6bf4fae")
 	)
+	(wire
+		(pts
+			(xy 187.96 90.17) (xy 193.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ff8ace-0358-4cd8-98dd-645ecbe1a024")
+	)
+	(wire
+		(pts
+			(xy 171.45 92.71) (xy 171.45 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e394f91b-e3e9-48f4-8e71-727db0bd65cd")
+	)
 	(text "Encoder/BufferB\nBypass Caps"
 		(exclude_from_sim no)
 		(at 150.495 168.91 0)
@@ -1246,7 +1499,7 @@
 	)
 	(text "External\nEncoder\nInput"
 		(exclude_from_sim no)
-		(at 170.815 96.52 0)
+		(at 200.66 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1257,7 +1510,7 @@
 	)
 	(text "Mates with: 1840382"
 		(exclude_from_sim no)
-		(at 183.388 94.361 0)
+		(at 213.233 94.361 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1290,22 +1543,22 @@
 	)
 	(global_label "5V2"
 		(shape input)
-		(at 161.925 85.09 0)
+		(at 182.88 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1085be8b-d8d9-4b56-b965-6a6952d86a32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.4178 85.09 0)
+			(at 176.3872 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1401,7 +1654,6 @@
 	(hierarchical_label "ENC_B"
 		(shape input)
 		(at 132.715 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1413,7 +1665,6 @@
 	(hierarchical_label "ENC_A"
 		(shape input)
 		(at 132.715 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1613,6 +1864,71 @@
 			(project "harp_treadmill"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "364048b6-5a78-4f32-81e5-7cb22b2d7b16")
+		(property "Reference" "#PWR141"
+			(at 187.96 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a52eb77b-f0d7-4b35-b334-ff8c54f652af")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "#PWR141")
 					(unit 1)
 				)
 			)
@@ -2013,8 +2329,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 163.83 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6416a659-5bd7-4b8d-bb3d-d50c502dd60b")
+		(property "Reference" "#PWR144"
+			(at 163.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f2b60f6-3c26-4dd4-9b6e-9b71124b88dd")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "#PWR144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Female")
-		(at 168.275 92.71 0)
+		(at 198.12 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2022,7 +2403,7 @@
 		(dnp no)
 		(uuid "67fbd054-dbdd-4a1f-804c-5473b3511cbb")
 		(property "Reference" "J7"
-			(at 166.37 88.265 0)
+			(at 196.215 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,7 +2412,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Female"
-			(at 170.18 95.25 0)
+			(at 200.025 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2041,7 +2422,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.5_1x04_P3.50mm_Horizontal"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2050,7 +2431,7 @@
 			)
 		)
 		(property "Datasheet" "n/a"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2059,7 +2440,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2068,7 +2449,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/phoenix-contact/1844236/349197"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,7 +2458,7 @@
 			)
 		)
 		(property "Manufacturer" "Phoenix Contact"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,7 +2467,7 @@
 			)
 		)
 		(property "Manufacturer Number" "1844236"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,7 +2476,7 @@
 			)
 		)
 		(property "Notes" "mates with 1840382"
-			(at 168.275 92.71 0)
+			(at 198.12 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,8 +3210,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS")
+		(at 187.96 85.09 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc2aeae5-e460-4ebb-9913-044e7091a303")
+		(property "Reference" "D17"
+			(at 193.04 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 194.31 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 187.96 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD12VV1BLS.pdf"
+			(at 187.96 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, 12V Reverse Standoff, 14.5V Breakdown"
+			(at 187.96 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "PESD12VV1BLSYL"
+			(at 187.96 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 187.96 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD12VV1BLSYL/13898530"
+			(at 187.96 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2d160b3-bfaa-4be3-9934-92a6d01c54b3")
+		)
+		(pin "1"
+			(uuid "fc75f9e5-b655-4888-a866-f5d0e829b77b")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 161.925 99.06 0)
+		(at 182.88 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2838,7 +3315,7 @@
 		(dnp no)
 		(uuid "dbd3a134-7f50-4bd5-9834-80495c13102c")
 		(property "Reference" "#PWR0100"
-			(at 161.925 105.41 0)
+			(at 182.88 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,7 +3324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.925 102.87 0)
+			(at 182.88 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,7 +3332,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.925 99.06 0)
+			(at 182.88 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2864,7 +3341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.925 99.06 0)
+			(at 182.88 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,7 +3350,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.925 99.06 0)
+			(at 182.88 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,6 +3365,167 @@
 			(project "harp_treadmill"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 163.83 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df52d613-e18a-4120-81ba-aa26f02d08fa")
+		(property "Reference" "D15"
+			(at 165.1 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 165.1 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD12VV1BLS.pdf"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, 12V Reverse Standoff, 14.5V Breakdown"
+			(at 163.83 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "PESD12VV1BLSYL"
+			(at 163.83 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 163.83 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD12VV1BLSYL/13898530"
+			(at 163.83 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8d1880ac-a3a9-4ac2-8440-4c4e583aac9e")
+		)
+		(pin "1"
+			(uuid "5cd8852c-edc1-4dbf-9860-0e9004ecf963")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e494001f-2da3-4115-8853-af733051987d")
+		(property "Reference" "#PWR143"
+			(at 171.45 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1091d673-8676-4ac8-a10e-5e8d8a2d2eb9")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "#PWR143")
 					(unit 1)
 				)
 			)
@@ -3020,6 +3658,102 @@
 			(project "harp_treadmill"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
 					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 171.45 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f09f2319-00cf-43b2-8a68-b12e533bbfca")
+		(property "Reference" "D14"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 172.72 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882D"
+			(at 171.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD12VV1BLS.pdf"
+			(at 171.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, 12V Reverse Standoff, 14.5V Breakdown"
+			(at 171.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "PESD12VV1BLSYL"
+			(at 171.45 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 171.45 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD12VV1BLSYL/13898530"
+			(at 171.45 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7982cfee-11ae-42c8-950c-607108861c58")
+		)
+		(pin "1"
+			(uuid "7bdf27c0-ac0e-4513-9850-1070e34178ca")
+		)
+		(instances
+			(project "harp_treadmill"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/45528c19-905b-4605-ba1b-282fdcb272c9"
+					(reference "D14")
 					(unit 1)
 				)
 			)
